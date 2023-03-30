@@ -10,6 +10,8 @@ docker network create cdntip_network</br>
 
 mkdir /data</br>
 docker run -d -it --network cdntip_network --restart=always -v /data/mysql:/var/lib/mysql --name panel_mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=panel </br>
+</br>
+
 mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci</br>
 启动 cloudpanel</br>
 
